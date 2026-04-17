@@ -18,7 +18,6 @@
     "calories_active": 3694,
     "sleep": {
       "total_h": 3.17,
-      "nap_h": 3.27,
       "score": 36,
       "score_qualifier": "POOR",
       "phases_h": {
@@ -59,7 +58,74 @@
         501,
         1005
       ],
-      "km_splits": []
+      "km_splits": [
+        {
+          "km": 1,
+          "pace": "6:21",
+          "hr": 135,
+          "cadence": 79
+        },
+        {
+          "km": 2,
+          "pace": "4:24",
+          "hr": 160,
+          "cadence": 89
+        },
+        {
+          "km": 3,
+          "pace": "4:37",
+          "hr": 162,
+          "cadence": 88
+        },
+        {
+          "km": 4,
+          "pace": "4:30",
+          "hr": 169,
+          "cadence": 89
+        },
+        {
+          "km": 5,
+          "pace": "4:17",
+          "hr": 164,
+          "cadence": 89
+        },
+        {
+          "km": 6,
+          "pace": "4:37",
+          "hr": 167,
+          "cadence": 88
+        },
+        {
+          "km": 7,
+          "pace": "4:44",
+          "hr": 169,
+          "cadence": 88
+        },
+        {
+          "km": 8,
+          "pace": "3:56",
+          "hr": 172,
+          "cadence": 92
+        },
+        {
+          "km": 9,
+          "pace": "4:51",
+          "hr": 168,
+          "cadence": 87
+        },
+        {
+          "km": 10,
+          "pace": "4:57",
+          "hr": 167,
+          "cadence": 84
+        },
+        {
+          "km": 11,
+          "pace": "5:47",
+          "hr": 167,
+          "cadence": 85
+        }
+      ]
     }
   ]
 }
