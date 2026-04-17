@@ -2,7 +2,7 @@
   "date": "2026-04-16",
   "wellness": {
     "hrv_avg_ms": 43,
-    "hrv_5min_high_ms": 55,
+    "hrv_5min_high_ms": 59,
     "hrv_baseline": 50,
     "rhr": 50,
     "readiness": null,
@@ -14,10 +14,11 @@
     "fatigue": null,
     "soreness": null,
     "mood": null,
-    "steps": 9800,
-    "calories_active": 750,
+    "steps": 14757,
+    "calories_active": 3694,
     "sleep": {
       "total_h": 3.17,
+      "nap_h": 3.27,
       "score": 36,
       "score_qualifier": "POOR",
       "phases_h": {
