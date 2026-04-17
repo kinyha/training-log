@@ -1,0 +1,17 @@
+[
+  {
+    "id": "i140407602",
+    "start_date_local": "2026-04-17T07:30:00",
+    "type": "Run",
+    "name": "Threshold intervals",
+    "distance": 10400,
+    "moving_time": 3120,
+    "average_heartrate": 162.0,
+    "max_heartrate": 179.0,
+    "average_cadence": 178,
+    "icu_training_load": 94,
+    "icu_hr_zone_times": [117, 221, 471, 797, 255, 501, 1005],
+    "interval_summary": ["6x 3m56s 170bpm", "2x 83s 172bpm"],
+    "kg_lifted": null
+  }
+]

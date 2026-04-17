@@ -1,0 +1,15 @@
+{
+  "id": "i140056165",
+  "start_date_local": "2026-04-15T06:00:00",
+  "type": "WeightTraining",
+  "name": "Gym A",
+  "distance": 0,
+  "moving_time": 3480,
+  "average_heartrate": 108.0,
+  "max_heartrate": 165.0,
+  "average_cadence": null,
+  "icu_training_load": 45,
+  "icu_hr_zone_times": null,
+  "interval_summary": null,
+  "kg_lifted": 16844.0
+}
