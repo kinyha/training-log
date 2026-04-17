@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip install*)",
+      "Bash(python scripts/*)",
+      "Bash(git add*)",
+      "Bash(git commit*)",
+      "Bash(git push*)"
+    ]
+  },
+  "network": {
+    "allowedHosts": [
+      "intervals.icu",
+      "api.telegram.org"
+    ]
+  }
+}
