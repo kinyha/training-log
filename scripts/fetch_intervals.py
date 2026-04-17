@@ -9,6 +9,8 @@ import sys
 from datetime import date, timedelta
 from pathlib import Path
 
+import time
+
 import requests
 
 try:
@@ -18,6 +20,8 @@ except ImportError:
     pass
 
 BASE = "https://intervals.icu/api/v1"
+_RETRIES = 4
+_BACKOFF = [5, 15, 30, 60]
 
 
 def _auth(api_key: str) -> tuple:
@@ -25,15 +29,23 @@ def _auth(api_key: str) -> tuple:
 
 
 def _get(url: str, api_key: str, params: dict = None):
-    r = requests.get(url, auth=_auth(api_key), params=params, timeout=30)
-    if r.status_code == 401:
-        print("ERROR: 401 — invalid API key", file=sys.stderr)
-        sys.exit(1)
-    if r.status_code == 403:
-        print("ERROR: 403 — invalid athlete_id", file=sys.stderr)
-        sys.exit(1)
-    r.raise_for_status()
-    return r.json()
+    for attempt, wait in enumerate([0] + _BACKOFF):
+        if wait:
+            print(f"Retry {attempt}/{_RETRIES} in {wait}s ...", file=sys.stderr)
+            time.sleep(wait)
+        r = requests.get(url, auth=_auth(api_key), params=params, timeout=30)
+        if r.status_code == 401:
+            print("ERROR: 401 — invalid API key", file=sys.stderr)
+            sys.exit(1)
+        if r.status_code == 403:
+            print("ERROR: 403 — invalid athlete_id", file=sys.stderr)
+            sys.exit(1)
+        if r.status_code < 500:
+            r.raise_for_status()
+            return r.json()
+        print(f"WARNING: {r.status_code} from {url}", file=sys.stderr)
+    print(f"ERROR: intervals.icu unavailable after {_RETRIES} retries", file=sys.stderr)
+    sys.exit(1)
 
 
 def fetch_wellness(athlete_id: str, api_key: str, target_date: str) -> dict:
