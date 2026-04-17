@@ -100,6 +100,7 @@ def _normalize_activity(act: dict, activity_streams: dict = None) -> dict:
             "kg_lifted": act.get("kg_lifted"),
             "avg_hr": act.get("average_heartrate"),
             "max_hr": act.get("max_heartrate"),
+            "description": act.get("description") or None,
         })
     else:
         base["type"] = act_type

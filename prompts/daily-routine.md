@@ -8,6 +8,16 @@ TODAY = сегодняшняя дата.
 
 ---
 
+## Шаг 0 — Git: переключись на main
+
+```bash
+git fetch origin
+git checkout main 2>/dev/null || git checkout -b main origin/main
+git pull origin main
+```
+
+---
+
 ## Шаг 1 — Данные из intervals.icu
 
 ```bash
@@ -57,36 +67,46 @@ python scripts/normalize.py
 Прочитай `data/snapshots/TARGET_DATE.json` + актуальный `plan/week-YYYY-WW.md` + `profile/me.md`.
 
 **Вчерашний день (TARGET_DATE):**
-- Сон: total_h, score, фазы (deep/REM). Сравни с предыдущими ночами из последних снапшотов. Если < 6ч — укажи это явно и контекст (сколько таких ночей за последние 7 дней).
+- Сон: total_h, score, фазы. Если < 6ч — отметь явно.
 - HRV: vs baseline 45–55. Если < 40 — сигнал.
 - RHR: vs baseline 48–52.
-- CTL/ATL/Form: одной строкой с трендом.
-- Активность: что было по плану vs что сделано. Обнови статус (✅/⚠️/❌) в таблице.
+- CTL/ATL/Form одной строкой.
+- Активность: что было по плану vs что сделано. Обнови статус (✅/⚠️/❌) в таблице плана.
+  - Для беговых: средний темп, HR, сплиты если интервалы.
+  - Для силовых: `description` из intervals.icu (Влад пишет веса/ощущение в описании тренировки), `kg_lifted`, avg_hr.
 
 **Сегодняшний день (TODAY):**
-Применяй правила адаптации из `profile/me.md`. Если сработало — измени строку плана на TODAY, запиши причину в «Комментарий». Если план не менялся — оставь как есть, НЕ объясняй что "всё в норме".
+Применяй правила адаптации из `profile/me.md`. Если сработало — измени строку плана, запиши причину в «Комментарий». Если план не менялся — оставь, НЕ объясняй.
 
 ---
 
 ## Шаг 5 — Отчёт и отправка
 
-Сохрани в `data/reports/TARGET_DATE.md` строго по этому шаблону (не добавляй лишних дней):
+Сохрани в `data/reports/TARGET_DATE.md` в КОРОТКОМ формате (Telegram читает, не перегружай):
 
 ```
-Отчёт TARGET_DATE
+Отчёт TARGET_DATE (день_нед)
 
-ВЧЕРА (TARGET_DATE)
-Сон: X ч X мин, score Y (QUALIFIER) — [1 строка оценки в контексте недели]
-Фазы: deep Xч / REM Xч / light Xч / awake Xмин
-HRV: X мс (базовая 50) — [оценка]
-RHR: X уд/мин | Шаги: X | Калории: X
-Нагрузка: [тип активности, ключевые цифры] / TSS X
-CTL X / ATL X / Form X ([тренд за 3 дня])
+ВЧЕРА
+Сон: Xч Xмин, score Y (QUALIFIER)
+Фазы: deep Xч / REM Xч / light Xч
+HRV: X мс | RHR: X уд/мин | Шаги: X
 
-СЕГОДНЯ (TODAY) — ПЛАН
-[итоговый план на TODAY после адаптации, 1–3 строки]
-[если адаптация сработала — одна строка почему]
+Нагрузка: [тип] — [dist/vol], [темп или kg_lifted], HR [avg], TSS X
+[если зал и есть description из intervals.icu: Заметки: ...]
+
+CTL X / ATL X / Form X
+
+---
+ПЛАН TODAY (день_нед)
+[итоговый план 1–2 строки]
+[если адаптация сработала: причина, 1 строка]
 ```
+
+**Правила отчёта:**
+- Вес: включай ТОЛЬКО по понедельникам (или если изменился на >0.3 кг от предыдущего снапшота)
+- Зоны HR, обновление LTHR, детальный анализ HRV-паттернов → только в лог-файле
+- Максимум 20 строк в отчёте
 
 Отправь:
 ```bash
@@ -97,7 +117,7 @@ python scripts/send_telegram.py data/reports/TARGET_DATE.md
 
 ## Шаг 6 — Лог и коммит
 
-Запиши в `data/logs/TARGET_DATE.md` полный trace.
+Запиши в `data/logs/TARGET_DATE.md` полный trace: HRV-паттерн, зоны HR, LTHR изменения, ретроспектива правил адаптации, сплиты, силовые детали.
 
 ```bash
 git add data/snapshots/ data/reports/ data/logs/ plan/
@@ -110,5 +130,5 @@ git push origin main
 ## При ошибке
 
 ```bash
-echo "⚠️ training-log: ошибка за TARGET_DATE. Проверь API." | python scripts/send_telegram.py
+echo "Ошибка training-log TARGET_DATE. Проверь API." | python scripts/send_telegram.py
 ```
