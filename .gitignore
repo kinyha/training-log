@@ -1,0 +1,8 @@
+.env
+data/raw/
+intervals_data/
+data/wellness/
+data/activities/
+__pycache__/
+*.pyc
+.pytest_cache/
