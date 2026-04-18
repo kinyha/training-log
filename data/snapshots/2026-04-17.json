@@ -26,8 +26,8 @@
         "rem": 1.77,
         "awake": 0.17
       },
-      "bedtime": null,
-      "wake": null
+      "bedtime": "20:33",
+      "wake": "04:46"
     }
   },
   "activities": []
