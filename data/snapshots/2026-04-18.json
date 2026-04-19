@@ -1,0 +1,74 @@
+{
+  "date": "2026-04-18",
+  "wellness": {
+    "hrv_avg_ms": 51,
+    "hrv_5min_high_ms": 89,
+    "hrv_baseline": 50,
+    "rhr": 50,
+    "readiness": null,
+    "ctl": 30.710308,
+    "atl": 51.09188,
+    "tsb": -20.4,
+    "ramp_rate": 0.77098465,
+    "weight": 93.9,
+    "fatigue": null,
+    "soreness": null,
+    "mood": null,
+    "steps": 18558,
+    "calories_active": 4175,
+    "sleep": {
+      "total_h": 7.33,
+      "score": 91,
+      "score_qualifier": "EXCELLENT",
+      "phases_h": {
+        "deep": 1.73,
+        "light": 4.0,
+        "rem": 1.6,
+        "awake": 0.13
+      },
+      "bedtime": "21:15",
+      "wake": "04:35"
+    }
+  },
+  "activities": [
+    {
+      "name": "Cardio",
+      "duration_min": 128.7,
+      "tss": 56,
+      "type": "Workout"
+    },
+    {
+      "name": "Hrodzyenski rayon Running",
+      "duration_min": 24.8,
+      "tss": 41,
+      "type": "Run",
+      "distance_km": 5.1,
+      "avg_pace": "4:50",
+      "avg_hr": 153,
+      "max_hr": 165,
+      "cadence_avg": 86.52378,
+      "interval_summary": [
+        "1x 2m18s 502w",
+        "1x 4m36s 499w",
+        "1x 2m49s 489w",
+        "1x 4m 517w"
+      ],
+      "hr_zone_times_s": [
+        141,
+        544,
+        566,
+        234,
+        0,
+        0,
+        0
+      ],
+      "km_splits": []
+    },
+    {
+      "name": "Hrodzyenski rayon Road Cycling",
+      "duration_min": 16.4,
+      "tss": 13,
+      "type": "Ride"
+    }
+  ]
+}
