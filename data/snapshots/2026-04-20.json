@@ -1,0 +1,45 @@
+{
+  "date": "2026-04-20",
+  "wellness": {
+    "hrv_avg_ms": 77.0,
+    "hrv_5min_high_ms": null,
+    "hrv_baseline": 50,
+    "rhr": 46,
+    "readiness": null,
+    "ctl": 31.786432,
+    "atl": 57.362915,
+    "tsb": -25.6,
+    "ramp_rate": 1.7230453,
+    "weight": 96.0,
+    "fatigue": null,
+    "soreness": null,
+    "mood": null,
+    "steps": 11248,
+    "calories_active": 3382,
+    "sleep": {
+      "total_h": 8.57,
+      "score": 94,
+      "score_qualifier": "EXCELLENT",
+      "phases_h": {
+        "deep": 1.28,
+        "light": 5.37,
+        "rem": 1.92,
+        "awake": 0.08
+      },
+      "bedtime": "19:31",
+      "wake": "04:05"
+    }
+  },
+  "activities": [
+    {
+      "name": "Strength",
+      "duration_min": 110.9,
+      "tss": 48,
+      "type": "Strength",
+      "kg_lifted": 15548.0,
+      "avg_hr": 109,
+      "max_hr": 153,
+      "description": "1) болгарский присед 3 по 10 по 20кг(гуд, но забивает плотно)\n2)rdl 3 по 10 2 последних 90(лимитирующем был хват левой руки)\n3) присед 3 по 80-90-100на 10(как будто было чуть меньше глубины)\n4) мост 3тпо 120 на 10\n5) Nordic 3 по 5\n6)жим 60,70,70 по 12, 5-10см не доводя до груди, тогда чувствую левое плечо \n7) подтяг 3 по 10 + 10кг\n8)шея гиря 24 2 по 10"
+    }
+  ]
+}

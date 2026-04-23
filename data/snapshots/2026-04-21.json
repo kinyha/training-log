@@ -1,0 +1,41 @@
+{
+  "date": "2026-04-21",
+  "wellness": {
+    "hrv_avg_ms": 35.0,
+    "hrv_5min_high_ms": null,
+    "hrv_baseline": 50,
+    "rhr": 53,
+    "readiness": null,
+    "ctl": 31.038551,
+    "atl": 53.587185,
+    "tsb": -22.5,
+    "ramp_rate": 0.97665596,
+    "weight": 96.0,
+    "fatigue": null,
+    "soreness": null,
+    "mood": null,
+    "steps": 8916,
+    "calories_active": 3237,
+    "sleep": {
+      "total_h": 3.02,
+      "score": 37,
+      "score_qualifier": "POOR",
+      "phases_h": {
+        "deep": 1.1,
+        "light": 1.92,
+        "rem": 0.0,
+        "awake": 0.18
+      },
+      "bedtime": "01:18",
+      "wake": "04:19"
+    }
+  },
+  "activities": [
+    {
+      "name": "Cardio",
+      "duration_min": 53.5,
+      "tss": 29,
+      "type": "Workout"
+    }
+  ]
+}
