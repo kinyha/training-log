@@ -1,0 +1,63 @@
+{
+  "date": "2026-04-23",
+  "wellness": {
+    "hrv_avg_ms": 67.0,
+    "hrv_5min_high_ms": null,
+    "hrv_baseline": 50,
+    "rhr": 47,
+    "readiness": null,
+    "ctl": 32.27739,
+    "atl": 58.90749,
+    "tsb": -26.6,
+    "ramp_rate": 1.4018021,
+    "weight": 96.0,
+    "fatigue": null,
+    "soreness": null,
+    "mood": null,
+    "steps": 16093,
+    "calories_active": 3622,
+    "sleep": {
+      "total_h": 7.82,
+      "score": 93,
+      "score_qualifier": "EXCELLENT",
+      "phases_h": {
+        "deep": 1.57,
+        "light": 4.61,
+        "rem": 1.65,
+        "awake": 0.18
+      },
+      "bedtime": null,
+      "wake": null
+    }
+  },
+  "activities": [
+    {
+      "name": "Hrodzyenski rayon - 4*1500,4:00,2*400",
+      "duration_min": 56.0,
+      "tss": 114,
+      "type": "Run",
+      "distance_km": 12.0,
+      "avg_pace": "4:39",
+      "avg_hr": 158,
+      "max_hr": 178,
+      "cadence_avg": 86.8961,
+      "interval_summary": [
+        "8x 35s 690w",
+        "10x 56s 580w",
+        "4x 29s 594w",
+        "1x 16s 753w",
+        "1x 90s 602w"
+      ],
+      "hr_zone_times_s": [
+        648,
+        325,
+        718,
+        719,
+        610,
+        337,
+        0
+      ],
+      "km_splits": []
+    }
+  ]
+}

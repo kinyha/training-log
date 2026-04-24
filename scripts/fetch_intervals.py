@@ -65,9 +65,14 @@ def fetch_activity_detail(activity_id: str, api_key: str) -> dict:
 
 
 def main():
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--date", help="Date to fetch (YYYY-MM-DD). Defaults to yesterday.")
+    args = parser.parse_args()
+
     athlete_id = os.environ["INTERVALS_ATHLETE_ID"]
     api_key = os.environ["INTERVALS_API_KEY"]
-    target = (date.today() - timedelta(days=1)).isoformat()
+    target = args.date if args.date else (date.today() - timedelta(days=1)).isoformat()
 
     print(f"Fetching intervals.icu data for {target}", file=sys.stderr)
 

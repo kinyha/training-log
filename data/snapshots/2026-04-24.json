@@ -1,0 +1,29 @@
+{
+  "date": "2026-04-24",
+  "wellness": {
+    "hrv_avg_ms": null,
+    "hrv_5min_high_ms": null,
+    "hrv_baseline": 50,
+    "rhr": 50,
+    "readiness": null,
+    "ctl": 31.517958,
+    "atl": 51.0656,
+    "tsb": -19.5,
+    "ramp_rate": 1.3688202,
+    "weight": null,
+    "fatigue": null,
+    "soreness": null,
+    "mood": null,
+    "steps": 264,
+    "calories_active": 724,
+    "sleep": {
+      "total_h": null,
+      "score": null,
+      "score_qualifier": null,
+      "phases_h": null,
+      "bedtime": null,
+      "wake": null
+    }
+  },
+  "activities": []
+}
