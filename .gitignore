@@ -6,3 +6,4 @@ data/activities/
 __pycache__/
 *.pyc
 .pytest_cache/
+.claude/scheduled_tasks.lock
