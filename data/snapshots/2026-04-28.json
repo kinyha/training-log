@@ -1,0 +1,93 @@
+{
+  "date": "2026-04-28",
+  "wellness": {
+    "hrv_avg_ms": 65.0,
+    "hrv_5min_high_ms": null,
+    "hrv_baseline": 50,
+    "rhr": 48,
+    "readiness": null,
+    "ctl": 36.62061,
+    "atl": 53.084404,
+    "tsb": -16.5,
+    "ramp_rate": 1.2535973,
+    "weight": 96.0,
+    "fatigue": null,
+    "soreness": null,
+    "mood": null,
+    "steps": 19126,
+    "calories_active": 592,
+    "sleep": {
+      "total_h": 7.43,
+      "score": 90,
+      "score_qualifier": "GOOD",
+      "phases_h": {
+        "deep": null,
+        "light": null,
+        "rem": null,
+        "awake": null
+      },
+      "bedtime": null,
+      "wake": null
+    }
+  },
+  "activities": [
+    {
+      "name": "Treadmill Running",
+      "duration_min": 55.5,
+      "tss": 43,
+      "type": "Run",
+      "distance_km": 10.5,
+      "avg_pace": "5:17",
+      "avg_hr": 101,
+      "max_hr": 168,
+      "cadence_avg": 76.117134,
+      "hr_zone_times_s": [
+        2801,
+        140,
+        168,
+        118,
+        0,
+        0,
+        0
+      ],
+      "km_splits": [
+        {
+          "km": 1,
+          "pace": "8:16",
+          "hr": 102,
+          "cadence": 64
+        },
+        {
+          "km": 2,
+          "pace": "11:42",
+          "hr": 92,
+          "cadence": 54
+        },
+        {
+          "km": 3,
+          "pace": "7:12",
+          "hr": 80,
+          "cadence": 71
+        },
+        {
+          "km": 4,
+          "pace": "6:51",
+          "hr": 94,
+          "cadence": 70
+        },
+        {
+          "km": 5,
+          "pace": "7:06",
+          "hr": 94,
+          "cadence": 74
+        },
+        {
+          "km": 6,
+          "pace": "5:33",
+          "hr": 127,
+          "cadence": 82
+        }
+      ]
+    }
+  ]
+}

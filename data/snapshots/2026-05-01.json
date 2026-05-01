@@ -1,0 +1,34 @@
+{
+  "date": "2026-05-01",
+  "wellness": {
+    "hrv_avg_ms": 50.0,
+    "hrv_5min_high_ms": null,
+    "hrv_baseline": 50,
+    "rhr": 47,
+    "readiness": null,
+    "ctl": 34.096085,
+    "atl": 37.51309,
+    "tsb": -3.4,
+    "ramp_rate": -1.4519424,
+    "weight": null,
+    "fatigue": null,
+    "soreness": null,
+    "mood": null,
+    "steps": 2620,
+    "calories_active": null,
+    "sleep": {
+      "total_h": 7.78,
+      "score": 89,
+      "score_qualifier": "GOOD",
+      "phases_h": {
+        "deep": null,
+        "light": null,
+        "rem": null,
+        "awake": null
+      },
+      "bedtime": null,
+      "wake": null
+    }
+  },
+  "activities": []
+}
