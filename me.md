@@ -17,7 +17,7 @@
   - Reliable fatigue markers: subjective feel + sleep quality + pace on standard sessions
 - Ferritin recovery protocol (started Apr 2026, ~3 months)
 - Previously: sertraline 6 years (tolerated well)
-- Anal fissure: operation 30.05.2026 — mandatory break 7+ days post-op, run 10–14 days post-op, gym (squat/deadlift) 14–21 days post-op
+- Anal fissure: operation 30.04.2026 — mandatory break 7+ days post-op, run 10–14 days post-op, gym (squat/deadlift) 14–21 days post-op
 
 ## Supplements (current)
 - Venlafaxine 150 mg (prescription)
