@@ -1,0 +1,44 @@
+{
+  "date": "2026-04-29",
+  "wellness": {
+    "hrv_avg_ms": 48.0,
+    "hrv_5min_high_ms": null,
+    "hrv_baseline": 50,
+    "rhr": 46,
+    "readiness": null,
+    "ctl": 35.758987,
+    "atl": 49.61199,
+    "tsb": -13.9,
+    "ramp_rate": 1.224102,
+    "weight": 96.0,
+    "fatigue": null,
+    "soreness": null,
+    "mood": null,
+    "steps": 7904,
+    "calories_active": 632,
+    "sleep": {
+      "total_h": 7.03,
+      "score": 84,
+      "score_qualifier": "GOOD",
+      "phases_h": {
+        "deep": null,
+        "light": null,
+        "rem": null,
+        "awake": null
+      },
+      "bedtime": null,
+      "wake": null
+    }
+  },
+  "activities": [
+    {
+      "name": "Strength",
+      "duration_min": 114.8,
+      "tss": 27,
+      "type": "Strength",
+      "kg_lifted": 13010.0,
+      "avg_hr": 96,
+      "max_hr": 140
+    }
+  ]
+}
